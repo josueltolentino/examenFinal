@@ -1,0 +1,20 @@
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `foto` varchar(255) DEFAULT NULL,
+  `username` varchar(150) DEFAULT NULL,
+  `contrasena` varchar(150) DEFAULT NULL,
+  `nombre` varchar(150) DEFAULT NULL,
+  `apellido` varchar(150) DEFAULT NULL,
+  `correo` varchar(150) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `post` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(255) DEFAULT NULL,
+  `contenido` varchar(255) DEFAULT NULL,
+  `fecha` datetime DEFAULT NULL,
+  `user` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
